@@ -81,23 +81,27 @@ each case. Take a screenshot of your graph and put them here by modifying this f
 it to this repository.
 
 Insertion, search, and deletion running time (already sorted):
-
-![Firefly picture of a cat 86147](https://github.com/user-attachments/assets/8b2d008e-3011-4979-97b8-fa2e9886a01a)
-
+![image](https://github.com/user-attachments/assets/1600c7bf-eb70-4b67-a0a9-61758c83518a)
+The runtime for insertion is O(N) and for search and remove it is O(logN). Insert has the largest runtime and search has the smallest. There are more fluctuations with smaller amounts of data.
 
 Insertion, search, and deletion running time (shuffled):
+![image](https://github.com/user-attachments/assets/dba4cdba-7762-4540-808e-2216a96804cd)
+The runtime for insertion is O(N) and for search and remove it is O(logN). Insert has the largest runtime and search has the smallest. There are more fluctuations with smaller amounts of data.
 
 Insertion, search, and deletion running time (reversed):
+![image](https://github.com/user-attachments/assets/d17bd93f-ac41-4bc3-b106-b5245aa5470d)
+The runtime for insertion is O(N) and for search and remove it is O(logN). Both search and remove level off for large N. Insert has the largest runtime and search has the smallest. There are more fluctuations with smaller amounts of data.
 
 ## 5. **Document your Dataset and Results**
 Document the source of your dataset and any modifications you made to it. Describe the results of your analysis and 
 how it compares to the theoretical performance of the hash table operations.
 
-Dataset Source: // FINISH ME
+Dataset Source:  https://www.kaggle.com/datasets/ramjasmaurya/volcanoes-on-earth-in-2021
 
-Dataset Modifications ("None" if unchanged): // FINISH ME
+Dataset Modifications ("None" if unchanged): None
 
-Result Analysis: // FINISH ME
+Result Analysis:
+Search and remove all had O(logN) runtimes, which means they leveled out at a larger N. They should have had O(1) runtime, but my graphs also have more fluctuation and inaccuracies at a smaller N so they are close to the correct runtime. Insert was O(N) but should have been O(1). I believe either computer error or the need for more data caused this difference.
 
 ## Submission:
 
