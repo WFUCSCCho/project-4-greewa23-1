@@ -101,6 +101,7 @@ Dataset Source:  https://www.kaggle.com/datasets/ramjasmaurya/volcanoes-on-earth
 Dataset Modifications ("None" if unchanged): None
 
 Result Analysis:
+Overall, the times for sorted, shuffled, and reversed lists were about the same for the operations insert, search, and remove. For all of the graphs, insertion had the largest time and searching had the smallest. The search time was a bit smaller than the time for removing.
 Search and remove all had O(logN) runtimes, which means they leveled out at a larger N. They should have had O(1) runtime, but my graphs also have more fluctuation and inaccuracies at a smaller N so they are close to the correct runtime. Insert was O(N) but should have been O(1). I believe either computer error or the need for more data caused this difference.
 
 ## Submission:
