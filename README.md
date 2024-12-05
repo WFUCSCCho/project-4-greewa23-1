@@ -81,23 +81,28 @@ each case. Take a screenshot of your graph and put them here by modifying this f
 it to this repository.
 
 Insertion, search, and deletion running time (already sorted):
-
-![Firefly picture of a cat 86147](https://github.com/user-attachments/assets/8b2d008e-3011-4979-97b8-fa2e9886a01a)
-
+![image](https://github.com/user-attachments/assets/1600c7bf-eb70-4b67-a0a9-61758c83518a)
+The runtime for insertion is O(N) and for search and remove it was also O(N). Insert has the largest runtime and search has the smallest. There are more fluctuations with smaller amounts of data. 
 
 Insertion, search, and deletion running time (shuffled):
+![image](https://github.com/user-attachments/assets/dba4cdba-7762-4540-808e-2216a96804cd)
+The runtime for insertion, search and remove is O(N). Insert has the largest runtime and search has the smallest. There are more fluctuations with smaller amounts of data.
 
 Insertion, search, and deletion running time (reversed):
+![image](https://github.com/user-attachments/assets/d17bd93f-ac41-4bc3-b106-b5245aa5470d)
+The runtime for insertion, search and remove is O(N). Both search and remove level off a bit at the end for large N, so more data may have resulted in a different conclusion. Insert has the largest runtime and search has the smallest. There are more fluctuations with smaller amounts of data.
 
 ## 5. **Document your Dataset and Results**
 Document the source of your dataset and any modifications you made to it. Describe the results of your analysis and 
 how it compares to the theoretical performance of the hash table operations.
 
-Dataset Source: // FINISH ME
+Dataset Source:  https://www.kaggle.com/datasets/ramjasmaurya/volcanoes-on-earth-in-2021
 
-Dataset Modifications ("None" if unchanged): // FINISH ME
+Dataset Modifications ("None" if unchanged): None
 
-Result Analysis: // FINISH ME
+Result Analysis:
+Overall, the runtimes for sorted, shuffled, and reversed lists were about the same for the operations insert, search, and remove. For all of the graphs, insertion had the largest time and searching had the smallest. The search time was a bit smaller than the time for removing.
+Search and remove both had O(N) runtimes, But their slope was smaller than that of insert. Insert also had a runtime of O(N). They should have had O(1) runtime, but my graphs also have more fluctuation and inaccuracies at a smaller N. I believe either computer error or the need for more data caused this difference.
 
 ## Submission:
 
